@@ -5,6 +5,7 @@ public class Capital {
 	    char[] buffer = string.toCharArray();
 	    for(int i=0;i<buffer.length;i++){
 	    if(buffer[i]==' '){
+	    	// this is not correct, if the string ends up with ' ', it will get array out of boundary exception.
 	    	buffer[i+1] = Character.toUpperCase(string.charAt(i+1));
 	    }
 	    }
@@ -12,6 +13,7 @@ public class Capital {
 	    System.out.println(buffer);
 	    return new String(buffer);
 	}
+	// why leave these space lines?
 		  
 		  
 		 

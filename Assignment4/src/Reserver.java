@@ -1,12 +1,16 @@
 import java.util.Scanner;
 public class Reserver{
+	// program is not correct, if the string contains only one word, what is your output?
+	// for example: string "test"?
 	public String back(String s){
 		char[] list=s.toCharArray();
 		int j=s.length()-1;
+		// in the simple program, please use StringBuilder instead.
 		StringBuffer output=new StringBuffer();
 		for(int i=j;i>=0;i--){
 			if(list[i]==' '){
 				for(int n=i+1;n<=j;n++){
+				// indentation
 				System.out.print(list[n]);
 				output.append(list[n]);
 				}

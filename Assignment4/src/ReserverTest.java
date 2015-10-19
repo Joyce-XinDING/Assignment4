@@ -1,3 +1,4 @@
+// import please not use wildcard import.
 import static org.junit.Assert.*;
 
 import org.junit.Test;

@@ -1,13 +1,17 @@
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+// please add javadoc for all the classes, and also comments for important functions.
 public class Whereis0s {
+// indentation
 public int[] finder(int[] arrayofzeros){
 		
 		int[] temp = new int[(arrayofzeros.length/3)+1];
 		int index = 0;
 		int length = 0;
 		int parts = -1;
+		// function is not correct, please verify this input: [0 0 0 1]
+		// also, you missed the junit for this question.
 		for(int i = 0; i<arrayofzeros.length;){
 			if(arrayofzeros[i]==0){
 				index = i;

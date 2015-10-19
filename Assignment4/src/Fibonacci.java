@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Fibonacci {
 public String series(int a) {
+	// no need to use array to save every number, since you just want to print them.
+	// so actually use 3 parameters can finish that, it save the space complexity to O(1) not O(n).
 	int arr[] = new int[200];
 	arr[0] = arr[1] = 1;
 	for (int i = 2; i < arr.length; i++) {
@@ -11,7 +13,7 @@ public String series(int a) {
 		break;
 	}
 	}
-	
+	// if you do not need to print out anything, why not change the return type to void?
 	return null;
 	
 }
